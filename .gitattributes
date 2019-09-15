@@ -11,8 +11,11 @@
 # Note: This is only used by command line
 ###############################################################################
 #*.cs     diff=csharp
+* linguist-vendored
 *.cs linguist-detectable=true
 *.cshtml linguist-detectable=true
+*.js linguist-vendored=false
+
 
 
 ###############################################################################
