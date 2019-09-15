@@ -1,0 +1,25 @@
+﻿@model IEnumerable<SocialResponsibility.Model.Entities.Category>
+
+@{ 
+    Layout = null;
+}
+<h5 class="card-header">Kategori</h5>
+<div class="card-body">
+    <div class="row">
+        <div class="col-lg-8">
+
+            @foreach (var item in Model)
+            {
+            <ul class="list-unstyled mb-0">
+                <li>
+                    <a href="/Filter/ListProjects?categoryId=@item.CategoryId">@item.Name</a>
+                </li>
+            </ul>
+            }
+
+                
+            </div>
+    </div>
+</div>
+
+

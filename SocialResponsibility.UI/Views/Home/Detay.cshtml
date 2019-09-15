@@ -1,0 +1,41 @@
+﻿@model SocialResponsibility.Model.Entities.Project
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+
+    <div class="col-md-10">
+       
+        <div class="blog">
+            <h3 class="page-header">
+                @Model.ProjectName
+            </h3>
+            <p>
+                <span class="glyphicon glyphicon-time"></span>
+                @if (@Model.AddedDate != null)
+                {
+                    @Model.AddedDate.ToShortDateString();
+
+                }
+            </p>
+            <hr />
+          
+            <img src="/Photos/@Model.ImagePath" height="300" width="600" />
+            <p>
+                <br />
+                @Model.ProjectDetail
+            </p>
+            <span> @Model.Location </span>
+            <hr />
+        </div>
+        
+    </div>
+
+
+    <div class="col-md-4">
+
+    </div>
+</div>
+

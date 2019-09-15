@@ -1,0 +1,42 @@
+﻿@model List<SocialResponsibility.Model.Entities.Project>
+@{
+    ViewBag.Title = "ListProjects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+   
+        <div class="col-md-10">
+            @foreach (var item in Model)
+            {
+            <div class="blog">
+                <h3 class="page-header">
+                    @item.ProjectName
+                </h3>
+                <p>
+                    <span class="glyphicon glyphicon-time"></span>
+                    @if (@item.AddedDate != null)
+                    {
+                        @item.AddedDate.ToShortDateString();
+
+                    }
+                </p>
+                <hr />
+
+                <img src="/Photos/@item.ImagePath" height="300" width="600" />
+                <p>
+                    <br />
+           
+                </p>
+                <a href="~/Home/detay?id=@item.ProjectId">Daha Fazla...</a>
+                <hr /> <hr/>
+            </div>
+            }
+        </div>
+    
+
+    <div class="col-md-4">
+
+    </div>
+</div>
+
