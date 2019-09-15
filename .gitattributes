@@ -12,8 +12,6 @@
 ###############################################################################
 #*.cs     diff=csharp
 * linguist-vendored
-*.cs linguist-detectable=true
-*.cshtml linguist-detectable=true
 *.cs linguist-vendored=false
 *.cshtml linguist-vendored=false
 
