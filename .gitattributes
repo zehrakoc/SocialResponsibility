@@ -13,7 +13,6 @@
 #*.cs     diff=csharp
 * linguist-vendored
 *.cs linguist-vendored=false
-*.cshtml linguist-vendored=false
 
 
 
